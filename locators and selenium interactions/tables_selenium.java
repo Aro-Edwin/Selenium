@@ -46,13 +46,13 @@ public class tables_selenium {
 		}
 		//use collection.min for find the low value of the aary
 		int smallno=Collections.min(numberlist);
-		System.out.println(smallno);
+		//System.out.println(smallno);
 		
 		//td[normalize-space()='20%']//following::td[1]
 		String val=Integer.toString(smallno)+"%";
 
 		String finapath="//td[normalize-space()="+'\''+val+'\''+"]//following::td[1]";
-		System.out.println(finapath);
+		//System.out.println(finapath);
 		
 		WebElement check=driver.findElement(By.xpath(finapath));
 		check.click();
